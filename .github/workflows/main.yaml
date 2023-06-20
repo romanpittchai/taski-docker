@@ -52,6 +52,10 @@ jobs:
         cd backend/
         python manage.py test
 
+# .github/workflows/main.yml
+
+# Тут задачи тестирования и сборки образа
+# ...
 # Добавляем новую задачу: деплой приложения
 build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
@@ -87,4 +91,4 @@ build_and_push_to_docker_hub:
           # Для каждого пересобранного образа 
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
-          tags: pittchai/taski_backend:latest 
+          tags: ваш-логин-на-docker-hub/taski_backend:latest
