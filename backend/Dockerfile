@@ -9,6 +9,7 @@ WORKDIR /app
 # Дальнейшие инструкции будут выполняться в директории /app
 
 # Установка gunicorn
+RUN pip install --upgrade pip
 RUN pip install gunicorn==20.1.0
 
 # Скопировать с локального компьютера файл зависимостей
